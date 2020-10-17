@@ -3,4 +3,7 @@
     <string name="churchbooking">ChurchBooking</string>
     <string name="phone_number">phone number</string>
     <string name="login">Login</string>
+    <string name="please_enter_code_sent_to">Please Enter Code Sent To</string>
+    <string name="change_phone_number">Change Phone Number</string>
+    <string name="btn_continue">Continue</string>
 </resources>
