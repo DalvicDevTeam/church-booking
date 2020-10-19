@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationProfileActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_full_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:counterMaxLength="15"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="435dp"
+            app:hintTextAppearance="@style/HintText"
+            app:errorTextAppearance="@style/ErrorText"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Full Name"
+                android:inputType="textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_city_of_recidence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="City of residence"
+        app:layout_constraintEnd_toEndOf="@+id/linear_layout"
+        app:layout_constraintStart_toStartOf="@+id/linear_layout"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
+
+    <Spinner
+        android:id="@+id/sp_city_of_residence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_city_of_recidence"
+        app:layout_constraintStart_toStartOf="@+id/tv_city_of_recidence"
+        app:layout_constraintTop_toBottomOf="@+id/tv_city_of_recidence" />
+
+    <TextView
+        android:id="@+id/tv_church_membership"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Church membership"
+        app:layout_constraintEnd_toEndOf="@+id/sp_city_of_residence"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sp_city_of_residence"
+        app:layout_constraintTop_toBottomOf="@+id/sp_city_of_residence" />
+
+    <Spinner
+        android:id="@+id/sp_church_membership"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_church_membership"
+        app:layout_constraintStart_toStartOf="@+id/tv_church_membership"
+        app:layout_constraintTop_toBottomOf="@+id/tv_church_membership" />
+
+    <Button
+        android:id="@+id/btn_let_me_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="Let me in"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/sp_church_membership"
+        app:layout_constraintStart_toStartOf="@+id/sp_church_membership"
+        app:layout_constraintTop_toBottomOf="@+id/sp_church_membership" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
