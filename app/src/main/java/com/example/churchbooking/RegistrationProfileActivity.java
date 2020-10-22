@@ -1,6 +1,5 @@
 package com.example.churchbooking;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,7 +8,6 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -22,7 +20,7 @@ public class RegistrationProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_profile);
 
-        final TextInputLayout textInputLayout = findViewById(R.id.et_full_name_layout);
+        final TextInputLayout textInputLayout = findViewById(R.id.textInputLayout_full_name);
         final TextInputEditText et_full_name = findViewById(R.id.et_full_name);
         getSupportActionBar().setTitle("Personal Info");
 

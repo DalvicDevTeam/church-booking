@@ -8,36 +8,28 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private TextInputEditText mPhone_number;
+    private Button mButton;
+    private TextInputLayout mTextInputLayout;
+    private String mMobile;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button button = findViewById(R.id.btn_login);
-        final TextInputLayout textInputLayout = findViewById(R.id.et_full_name_layout);
-        final TextInputEditText et_phone_number = findViewById(R.id.et_phone_number);
+        mButton = findViewById(R.id.btn_login);
+        mTextInputLayout = findViewById(R.id.textInputLayout);
+        mPhone_number = findViewById(R.id.et_phone_number);
 
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, LoginConfirmationActivity.class);
-
-                String phoneNumber = et_phone_number.getText().toString();
-                if (phoneNumber!= null ){
-                    intent.putExtra(LoginConfirmationActivity.INTENT_EXTRA_PHONE_NUMBER,phoneNumber);
-                }
-
-                startActivity(intent);
-            }
-        });
-        et_phone_number.addTextChangedListener(new TextWatcher() {
+        mPhone_number.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -45,16 +37,35 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length() > textInputLayout.getCounterMaxLength())
-                    textInputLayout.setError("Max phone number length is " + textInputLayout.getCounterMaxLength());
+                if (s.length() > mTextInputLayout.getCounterMaxLength())
+                    mTextInputLayout.setError("Max phone number length is " + mTextInputLayout.getCounterMaxLength());
                 else
-                    textInputLayout.setError(null);
+                    mTextInputLayout.setError(null);
             }
 
             @Override
             public void afterTextChanged(Editable s) {
+                mMobile = mTextInputLayout.getEditText().getText().toString().trim();
+            }
+        });
 
+        mButton.setOnClickListener(new View.OnClickListener() {
+
+
+
+            @Override
+            public void onClick(View v) {
+                if(mMobile.isEmpty() || mMobile.length() <= 9){
+                    mPhone_number.setError("Enter a valid mobile");
+                    mPhone_number.requestFocus();
+                    return;
+                }
+                Intent intent = new Intent(LoginActivity.this, LoginConfirmationActivity.class);
+                intent.putExtra(LoginConfirmationActivity.INTENT_EXTRA_PHONE_NUMBER, mMobile);
+                startActivity(intent);
             }
         });
     }
+
+
 }

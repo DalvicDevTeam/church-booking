@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "606654218792",
+    "firebase_url": "https://bookit-bc85c.firebaseio.com",
+    "project_id": "bookit-bc85c",
+    "storage_bucket": "bookit-bc85c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606654218792:android:9fd14754b2b2fb8eb7eb1d",
+        "android_client_info": {
+          "package_name": "com.example.churchbooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606654218792-nq4cln2irr9o4kbls2fm6nh5hqjl6e42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.churchbooking",
+            "certificate_hash": "04298490fed15c3ee96bbeee465648e8492bbce1"
+          }
+        },
+        {
+          "client_id": "606654218792-7uu0d0r828t6f8rh87ifnalhcom5e3du.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_EoedB-aQ6bFI09ole6tFpwQm8rbXVEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606654218792-7uu0d0r828t6f8rh87ifnalhcom5e3du.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
