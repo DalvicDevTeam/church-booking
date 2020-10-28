@@ -7,4 +7,25 @@
     <string name="change_phone_number">Change Phone Number</string>
     <string name="btn_continue">Continue</string>
     <string name="phone_number">Phone Number</string>
+
+    <!-- Firebase Database Nodes -->
+    <string name="db_node_users">users</string>
+
+
+    //userID1{
+    //        userName = "James"
+    //        churchMembershipId = "churchId"
+    //        profilePic = ""
+    //        userID = "userId1"
+    //
+    //        }
+
+    <!-- Firebase Database Fields -->
+    <string name="field_userName">user_name</string>
+    <string name="field_churchMembershipId">church_id</string>
+    <string name="field_profilePic">profile_pic</string>
+    <string name="field_userId">user_id</string>
+
+
+
 </resources>
