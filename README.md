@@ -18,6 +18,20 @@
 
 church booking is a church booking app for all churchs across ethiopia for booking a set before attending to programs .
 
+
+![Alt text](/screenShoot/photo_2020-10-03_10-03-47.jpg?raw=true)  ![Alt text](/screenShoot/photo_2020-10-03_10-03-50.jpg?raw=true)
+
+
+
+![Alt text](/screenShoot/photo_2020-10-03_10-03-53.jpg?raw=true)  ![Alt text](/screenShoot/photo_2020-10-03_10-03-56.jpg?raw=true)
+
+
+
+![Alt text](/screenShoot/photo_2020-10-03_10-03-58.jpg?raw=true) ![Alt text](/screenShoot/photo_2020-10-03_10-04-01.jpg?raw=true)
+
+
+
+
 ## ⭐ How to get started?
 
 You can refer to the following articles on the basics of Git and Github and also contact the me, in case you are stuck:
